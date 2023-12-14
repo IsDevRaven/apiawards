@@ -1,0 +1,28 @@
+.romantic-heading {
+    color: #ff3877; /* Color rosa */
+    font-family: 'cursive', cursive; /* Fuente romántica */
+    font-size: 2rem;
+}
+
+.romantic-label {
+    color: #ff3877; /* Color rosa */
+}
+
+.romantic-input {
+    border: 2px solid #ff3877; /* Borde rosa */
+    color: #ff3877; /* Texto rosa */
+    font-family: 'cursive', cursive; /* Fuente romántica */
+}
+
+.romantic-button {
+    background-color: #ff3877; /* Fondo rosa */
+    border: none;
+    color: white;
+    font-family: 'cursive', cursive; /* Fuente romántica */
+}
+
+.romantic-list {
+    background-color: #ffeaef; /* Fondo rosa claro */
+    padding: 10px;
+    border: 2px solid #ff3877; /* Borde rosa */
+}
