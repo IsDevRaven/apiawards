@@ -2,7 +2,7 @@ const express = require('express');
 const sqlite3 = require('sqlite3').verbose();
 
 const app = express();
-const port = 3000;
+app.set('port', process.env.PORT || 3000);
 
 // Conecta a la base de datos SQLite
 const db = new sqlite3.Database('/Users/wylder/DataGripProjects/Simem/awards.sqlite');
@@ -37,9 +37,6 @@ app.get('/api/premios', (req, res) => {
   });
 });
 
-
-
-
-app.listen(port, () => {
-  console.log(`API en ejecución en http://localhost:${port}`);
+app.listen(app.get('port'), () => {
+  console.log(`API en ejecución en port:${app.get('port')}`);
 });
